@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url("../../fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+*, *:after, *:before{
+    box-sizing: border-box; /*ширина и высота элемента считается content+padding+border*/
+    padding: 0;
+    margin: 0;
+    /*transition: .5s ease-in-out; !* добавим плавность переходов для всех элементов страницы*!*/
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.all {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.info {
+    position: absolute;
+    top: 50px;
+    left: 98px;
+    width: 42%;
+}
+.link_hidden {
+    display: none;
+}
+.link{
+    padding-bottom: 20px;
+}
+.link a{
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 17px;
+    line-height: 1.43;
+    color: black;
+}
+.link p{
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.11;
+    padding-top: 20px;
+}
+.numbers > p{
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 21px;
+    line-height: 1.43;
+    padding-bottom: 30px;
+}
+.numbers-content{
+    float: left;
+    width: 50%;
+    padding-bottom: 30px;
+
+}
+.numbers-content p:first-child{
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 17px;
+    line-height: 1.47;
+}
+.numbers-content p:last-child{
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.button{
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 5px auto;
+    border-style: none;
+    border-radius: 3px;
+    height: 50px;
+    line-height: 1.47;
+    margin-top: 10px;
+}
+.tab{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.tab span{
+    font-size: 17px;
+    line-height: 1.41;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.tab span:first-child{
+    font-family: "Open Sans Semibold", sans-serif;
+    font-weight: 600;
+    margin-right: 40px;
+    margin-left: 103px;
+    border-bottom: 2px solid black;
+}
+.tab span:last-child{
+    font-family: "Open Sans Regular", sans-serif;
+
+}
+.else{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+}
+@media (max-width: 1024px) {
+    img{
+        height: 560px;
+    }
+    .info{
+        top: 30px;
+        left: 40px;
+    }
+}
+@media (max-width: 768px) {
+    img{
+        height: 100%;
+    }
+    .info{
+        position: static;
+        width: 100%;
+    }
+    .link_hidden{
+        display: block;
+        padding-bottom: 20px;
+        position: absolute;
+        top: 98px;
+        left: 40px;
+        width: 42%;
+    }
+    .link_hidden a{
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 17px;
+        line-height: 1.43;
+        color: black;
+    }
+    .link_hidden p{
+        font-family: "Open Sans Semibold", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.11;
+        padding-top: 20px;
+    }
+    .link{
+        display: none;
+    }
+    .numbers{
+        padding: 0 40px;
+    }
+    .numbers > p {
+        font-size: 17px;
+
+        padding: 30px 0;
+    }
+    .numbers-content{
+        float: none;
+        width: inherit;
+        display: inline-block;
+        padding-bottom: 30px;
+        padding-right: 50px;
+
+    }
+    .numbers-content:last-child{
+
+        display: none;
+
+    }
+    .numbers-content p:first-child{
+        font-size: 17px;
+    }
+    .numbers-content p:last-child{
+        font-family: "Open Sans Semibold", sans-serif;
+        font-size: 24px;
+    }
+    .button{
+        font-size: 14px;
+        font-weight: 600;
+        width: 30%;
+        padding: 5px auto;
+        border-style: none;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 1.43;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .tab span:first-child {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 600px) {
+    img{
+        height: 100%;
+    }
+    .info{
+        position: static;
+        width: 100%;
+    }
+    .link_hidden{
+        display: none;
+    }
+    .link{
+        display: block;
+    }
+    .numbers {
+        padding: 0;
+    }
+    .info{
+        padding: 20px;
+    }
+    .link p{
+        font-size: 28px;
+    }
+    .numbers > p{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .numbers-content{
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .button{
+        width: 100%;
+        margin-left: 0;
+    }
+}
