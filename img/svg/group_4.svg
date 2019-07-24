@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="77" viewBox="0 0 72 77">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M-14-12H86V88H-14z"/>
+        <g stroke-width="1.5" transform="translate(1 1)">
+            <circle cx="6.083" cy="6.083" r="6.083" stroke="#000"/>
+            <circle cx="6.083" cy="25.851" r="6.083" stroke="#000"/>
+            <circle cx="6.083" cy="45.62" r="6.083" stroke="#000"/>
+            <circle cx="25.851" cy="6.083" r="6.083" stroke="#000"/>
+            <circle cx="25.851" cy="25.851" r="6.083" stroke="#000"/>
+            <circle cx="25.851" cy="45.62" r="6.083" stroke="#000"/>
+            <circle cx="25.851" cy="65.388" r="6.083" stroke="#000"/>
+            <circle cx="45.62" cy="6.083" r="6.083" stroke="#000"/>
+            <circle cx="45.62" cy="25.851" r="6.083" stroke="#000"/>
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M51.512 45.62c0-3.67-2.533-6.083-5.892-6.083a6.083 6.083 0 0 0-6.083 6.083c0 3.359 2.168 5.929 6.083 5.929"/>
+            <path stroke="#19BB4F" stroke-linecap="round" stroke-linejoin="round" d="M42.744 75c-2.22-2.312-3.986-4.405-5.302-6.28-1.974-2.813 1.798-5.913 4.202-3.67 2.43 2.268 3.782 3.363 4.055 3.288V48.12c0-4.161 6.283-4.161 6.283 0v13.292c-.073-3.169.962-4.703 3.106-4.603 1.92.09 2.812 2.4 2.679 6.929.02-3.592 1.056-5.389 3.105-5.389 2.05 0 2.968 2.294 2.757 6.88.05-3.487 1.082-5.23 3.095-5.23s2.933 1.933 2.76 5.798V75"/>
+        </g>
+    </g>
+</svg>
