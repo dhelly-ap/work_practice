@@ -18,8 +18,8 @@
                 <input type="text" name="number" id="number" placeholder="Мобильный телефон*" onchange="changeNumber(document.getElementById('number_code'), document.getElementById('form'))"><br>
                 <label for="code" id="number_code">Введите код подтверждения из сообщения, отправленого на номер 89*********</label><br>
                 <input class="sms" type="text" name="code" id="code" placeholder="Код из смс">
-                <input class="sms_go" type="button" value="Отправить еще раз" name="submit1" onclick="valid1(document.getElementById('form'))"><br>
-                <input type="button" value="Продолжить" name="submit2" onclick="valid2(document.getElementById('form'))">
+                <input class="sms_go" type="button" value="Отправить еще раз" name="submit1" onclick="sendSms(document.getElementById('form'))"><br>
+                <input type="button" value="Продолжить" name="submit2" onclick="valid(document.getElementById('form'))">
             </form>
         </div>
     </div>
