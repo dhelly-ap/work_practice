@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vozvrat Naloga</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="vozvrat_naloga.js"></script>
+</head>
+<body>
+<div class="all">
+    <p class="title">Отметьте свои траты и узнайте, сколько можете вернуть</p>
+    <div class="boxes">
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/transport-1.png">
+            <p>Покупка недвижимости</p>
+            <input id="checkbox1" type="checkbox">
+            <label for="checkbox1"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/cure.png">
+            <p>Лечение и лекарства</p>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/study.png">
+            <p>Обучение</p>
+            <input type="checkbox" id="checkbox3">
+            <label for="checkbox3"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/vznos.png">
+            <p>Взносы в НПФ</p>
+            <input type="checkbox" id="checkbox4">
+            <label for="checkbox4"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/mortgage.png">
+            <p>Ипотечный кредит</p>
+            <input type="checkbox" id="checkbox5">
+            <label for="checkbox5"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/vznos.png">
+            <p>Инвестиционный счет</p>
+            <input type="checkbox" id="checkbox6">
+            <label for="checkbox6"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/cure.png">
+            <p>Страхование</p>
+            <input type="checkbox" id="checkbox7">
+            <label for="checkbox7"></label>
+        </div>
+        <div class="boxes-content">
+            <img src="../../img/vozvrat_naloga/study.png">
+            <p>Благотворительность</p>
+            <input type="checkbox" id="checkbox8">
+            <label for="checkbox8"></label>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-content">
+            <div class="select">
+                <label for="service">У меня есть пакет услуг</label>
+                <div class="select-div">
+                    <select id="service" size="1">
+                        <option>Сбербанк Премьер</option>
+                        <option>Сбербанк Первый</option>
+                    </select>
+                    <svg width="10" height="10" >
+                        <line x1="0" y1="0" x2="5" y2="5" stroke="black"stroke-width="1" />
+                        <line x1="5" y1="5" x2="10" y2="0" stroke="black"stroke-width="1" />
+                    </svg>
+                </div>
+            </div>
+            <p>Хочу, чтобы налоговый консультант…</p>
+            <div class="options">
+                <div class="option-content">
+                    <span>заполнил декларацию</span>
+                    <span>+</span>
+                </div>
+                <div class="option-content">
+                    <span>Отправить декларацию</span>
+                    <span>+</span>
+                </div>
+                <div class="option-content">
+                    <span>составил справку для госслужащего</span>
+                    <span>+</span>
+                </div>
+            </div>
+            <div class="last-checkbox">
+                <input type="checkbox">
+                <label>У меня есть полис «Билет в будущее»</label>
+            </div>
+
+        </div>
+        <div class="bottom-content">
+            <p class="small-content">Вы сможете вернуть за год</p>
+            <p class="numbers">до 650 000 ₽</p>
+            <p class="small-content">Стоимость услуг по возврату</p>
+            <p class="numbers">1499 ₽</p>
+            <button class="button" type="submit">Вернуть налоги</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
