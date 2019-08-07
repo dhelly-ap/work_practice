@@ -52,28 +52,17 @@ img {
 }
 
 .boxes-content{
-    width: 22%;
+    width: 24%;
     margin: 0 auto 40px;
     height: 125px;
     padding: 20px;
     position: relative;
 }
 
-.boxes-content:hover img{
-    filter: none;
-}
-
-.boxes-content:hover{
-    border-color: #19bb4f;
-}
-
-.boxes-content input{
-    /*position: absolute;*/
-    /*top: 20px;*/
-    /*right: 20px;*/
+.input{
     display: none;
 }
-.boxes-content label{
+.label{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -81,14 +70,6 @@ img {
     height: 20px;
     border: 1px solid #999999;
     background-color: white;
-}
-.boxes-content label:before{
-    content: "";
-    background-image: url("check.svg");
-    z-index: 15;
-    width: 20px;
-    height: 20px;
-    position: absolute;
 }
 
 .boxes-content img{
@@ -129,8 +110,11 @@ img {
     margin-right: 15px;
 }
 
-svg{
-    padding-top: 1px;
+.arrow{
+    background-image: url("arrow.svg");
+    display: inline-block;
+    width: 10px;
+    height: 10px;
 }
 select::-ms-expand {
     display: none;
@@ -140,6 +124,11 @@ select::-ms-expand {
     padding: 11px 30px 14px 25px;
     margin-top: 20px;
     margin-right: 10px;
+    border-color: #19bb4f;
+}
+.option-content .change-color{
+    background-color: #19bb4f;
+    color: white;
 }
 
 .option-content:last-child{
@@ -148,6 +137,11 @@ select::-ms-expand {
 
 .last-checkbox{
     margin-top: 40px;
+}
+.last-checkbox .label{
+    display: inline-block;
+    position: static;
+    margin-right: 14px;
 }
 
 .bottom-content:last-child{

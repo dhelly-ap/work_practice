@@ -10,54 +10,54 @@
 <body>
 <div class="all">
     <p class="title">Отметьте свои траты и узнайте, сколько можете вернуть</p>
-    <div class="boxes">
+    <div class="boxes" >
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/transport-1.png">
             <p>Покупка недвижимости</p>
-            <input id="checkbox1" type="checkbox">
-            <label for="checkbox1"></label>
+            <input  class="input" id="checkbox1" type="checkbox" onchange="checkbox(0)">
+            <label class="label" for="checkbox1"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/cure.png">
             <p>Лечение и лекарства</p>
-            <input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label>
+            <input class="input" type="checkbox" id="checkbox2" onchange="checkbox(1)">
+            <label class="label" for="checkbox2"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/study.png">
             <p>Обучение</p>
-            <input type="checkbox" id="checkbox3">
-            <label for="checkbox3"></label>
+            <input class="input" type="checkbox" id="checkbox3" onchange="checkbox(2)">
+            <label  class="label" for="checkbox3"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/vznos.png">
             <p>Взносы в НПФ</p>
-            <input type="checkbox" id="checkbox4">
-            <label for="checkbox4"></label>
+            <input class="input" type="checkbox" id="checkbox4" onchange="checkbox(3)">
+            <label class="label" for="checkbox4"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/mortgage.png">
             <p>Ипотечный кредит</p>
-            <input type="checkbox" id="checkbox5">
-            <label for="checkbox5"></label>
+            <input class="input" type="checkbox" id="checkbox5" onchange="checkbox(4)">
+            <label class="label" for="checkbox5"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/vznos.png">
             <p>Инвестиционный счет</p>
-            <input type="checkbox" id="checkbox6">
-            <label for="checkbox6"></label>
+            <input class="input" type="checkbox" id="checkbox6" onchange="checkbox(5)">
+            <label class="label" for="checkbox6"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/cure.png">
             <p>Страхование</p>
-            <input type="checkbox" id="checkbox7">
-            <label for="checkbox7"></label>
+            <input class="input" type="checkbox" id="checkbox7" onchange="checkbox(6)">
+            <label class="label" for="checkbox7"></label>
         </div>
         <div class="boxes-content">
             <img src="../../img/vozvrat_naloga/study.png">
             <p>Благотворительность</p>
-            <input type="checkbox" id="checkbox8">
-            <label for="checkbox8"></label>
+            <input class="input" type="checkbox" id="checkbox8" onchange="checkbox(7)">
+            <label class="label" for="checkbox8"></label>
         </div>
     </div>
     <div class="bottom">
@@ -69,30 +69,28 @@
                         <option>Сбербанк Премьер</option>
                         <option>Сбербанк Первый</option>
                     </select>
-                    <svg width="10" height="10" >
-                        <line x1="0" y1="0" x2="5" y2="5" stroke="black"stroke-width="1" />
-                        <line x1="5" y1="5" x2="10" y2="0" stroke="black"stroke-width="1" />
-                    </svg>
+                    <div class="arrow"></div>
                 </div>
             </div>
             <p>Хочу, чтобы налоговый консультант…</p>
             <div class="options">
-                <div class="option-content">
+                <div class="option-content" >
                     <span>заполнил декларацию</span>
-                    <span>+</span>
+                    <div class="option-content-icon"></div>
                 </div>
-                <div class="option-content">
+                <div class="option-content" >
                     <span>Отправить декларацию</span>
-                    <span>+</span>
+                    <div class="option-content-icon"></div>
                 </div>
                 <div class="option-content">
                     <span>составил справку для госслужащего</span>
-                    <span>+</span>
+                    <div class="option-content-icon"></div>
                 </div>
             </div>
             <div class="last-checkbox">
-                <input type="checkbox">
-                <label>У меня есть полис «Билет в будущее»</label>
+                <input class="input" type="checkbox" id="lastcheckbox" onchange="checkbox(8)">
+                <label class="label" for="lastcheckbox"></label>
+                <span>У меня есть полис «Билет в будущее»</span>
             </div>
 
         </div>
