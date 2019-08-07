@@ -15,7 +15,6 @@
 }
 
 img {
-    display: block;
     height: 50px;
     width: 50px;
     filter: grayscale(100%) opacity(25%);
@@ -48,13 +47,12 @@ img {
 }
 
 .boxes{
-    margin-bottom: 30px;
+    margin-bottom: 17px;
 }
 
 .boxes-content{
-    width: 24%;
+    width: 22%;
     margin: 0 auto 40px;
-    height: 125px;
     padding: 20px;
     position: relative;
 }
@@ -70,6 +68,7 @@ img {
     height: 20px;
     border: 1px solid #999999;
     background-color: white;
+    cursor: pointer;
 }
 
 .boxes-content img{
@@ -97,6 +96,8 @@ img {
 .select-div {
     display: inline-block;
     float: right;
+    position: relative;
+    cursor: pointer;
 }
 
 .select select{
@@ -107,7 +108,11 @@ img {
     font-family: "Open Sans Semibold", sans-serif;
     font-size: 100%;
     font-weight: 600;
-    margin-right: 15px;
+    padding-right: 33px;
+    position: absolute;
+    right: -1px;
+    z-index: 1;
+    background-color: transparent;
 }
 
 .arrow{
@@ -116,17 +121,28 @@ img {
     width: 10px;
     height: 10px;
 }
-select::-ms-expand {
-    display: none;
-}
+
 .option-content{
     border-radius: 25px;
-    padding: 11px 30px 14px 25px;
+    padding: 11px 20px 14px 21px;
     margin-top: 20px;
     margin-right: 10px;
     border-color: #19bb4f;
+    cursor: pointer;
 }
-.option-content .change-color{
+.option-content-icon {
+    background-image: url("plus.svg");
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: 10px;
+}
+.change_icon{
+    background-image: url("x.svg");
+    width: 10px;
+    height: 10px;
+}
+.change_color{
     background-color: #19bb4f;
     color: white;
 }
