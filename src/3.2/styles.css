@@ -14,40 +14,39 @@
     margin: 0;
 }
 
-img {
-    height: 50px;
-    width: 50px;
-    filter: grayscale(100%) opacity(25%);
-}
-
-.all {
+.tax-refund {
     padding: 60px 98px;
     font-family: "Open Sans Semibold", sans-serif;
     font-size: 17px;
     background-color: #f7f7f7;
 }
 
-.title{
-    font-size: 212%; /*36px*/
+.tax-refund__title{
+    font-size: 36px;
     line-height: 1.11;
     width: 55%;
     margin-bottom: 40px;
     margin-left: 13px;
 }
 
-.boxes-content, .select, .option-content{
-    border: 1px solid #d8d8d8;
-    border-radius: 3px;
-    background-color: white;
-}
-
-.boxes, .bottom, .options{
+.tax-refund__boxes, .tax-refund__bottom, .options{
     display: flex;
     flex-wrap: wrap;
 }
 
-.boxes{
+.tax-refund__boxes{
     margin-bottom: 17px;
+}
+
+.tax-refund__bottom{
+    margin-left: 13px;
+}
+
+
+.boxes-content, .select, .option-content{
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    background-color: white;
 }
 
 .boxes-content{
@@ -57,9 +56,20 @@ img {
     position: relative;
 }
 
+img {
+    height: 50px;
+    width: 50px;
+    filter: grayscale(100%) opacity(25%);
+}
+
+.boxes-content img{
+    margin-bottom: 10px;
+}
+
 .input{
     display: none;
 }
+
 .label{
     position: absolute;
     top: 20px;
@@ -69,14 +79,6 @@ img {
     border: 1px solid #999999;
     background-color: white;
     cursor: pointer;
-}
-
-.boxes-content img{
-    margin-bottom: 10px;
-}
-
-.bottom{
-    margin-left: 13px;
 }
 
 .bottom-content{
@@ -106,7 +108,7 @@ img {
     appearance: none !important;
     border: none;
     font-family: "Open Sans Semibold", sans-serif;
-    font-size: 100%;
+    font-size: 17px;
     font-weight: 600;
     padding-right: 33px;
     position: absolute;
@@ -133,8 +135,8 @@ img {
 .option-content-icon {
     background-image: url("plus.svg");
     display: inline-block;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     margin-left: 10px;
 }
 .change_icon{
@@ -165,19 +167,19 @@ img {
 }
 
 .bottom-content:last-child .small-content{
-    font-size: 82%; /*14px*/
+    font-size: 14px;
     padding-bottom: 4px;
 }
 
 .bottom-content:last-child .numbers{
-    font-size: 259%; /*44px*/
+    font-size: 44px;
     padding-bottom: 30px;
     font-family: "Open Sans Semibold", sans-serif;
 }
 
 .button{
     font-family: "Open Sans Semibold", sans-serif;
-    font-size: 100%;
+    font-size: 17px;
     width: 56%;
     background-color: black;
     color: white;
@@ -186,4 +188,77 @@ img {
     border-radius: 2px;
     height: 50px;
     line-height: 1.47;
+}
+@media (max-width: 1365px) {
+    .tax-refund {
+        padding: 60px 40px;
+    }
+
+    .tax-refund__title{
+        width: 62%;
+    }
+    .boxes-content:last-child{
+        word-break: break-all;
+    }
+    .select select{
+        padding-right: 23px;
+    }
+    .option-content{
+        font-size: 14px;
+        padding: 10px 13px 10px 13px;
+    }
+    .button{
+        width: 76%;
+    }
+}
+@media (max-width: 1023px){
+
+    .tax-refund {
+        font-size: 14px;
+    }
+
+    .tax-refund__title{
+        font-size: 32px;
+        line-height: 1.25;
+        width: 91%;
+    }
+
+    .boxes-content{
+        padding: 15px;
+    }
+
+    .bottom-content p, .last-checkbox, .button{
+        font-size: 17px;
+    }
+
+    .bottom-content:last-child .numbers{
+        font-size: 32px;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    .bottom-content{
+        width: 58%;
+    }
+    .select select{
+        font-size: 14px;
+        padding-right: 22px;
+    }
+    .select {
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+    .bottom-content{
+        width: 54%;
+    }
+    .bottom-content:last-child{
+        width: 46%;
+        padding-left: 78px;
+    }
+
+    .button{
+        width: 92%;
+    }
 }
